@@ -1,11 +1,14 @@
 vowels = 'aeiouAEIOU'
 s = 'aeiOUz'
-s = s+s
+s = s + s
+result = ""
+
 for i in s:
     if i.isupper():
-        s = s.replace(i, "")
+        continue
     elif i in vowels:
-        s = s.replace(i, "#")
- 
+        result += "#"
+    else:
+        result += i
 
-print(s)
+print(result)
